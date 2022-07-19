@@ -70,6 +70,7 @@ nav {
   background:var(--logo);
   opacity: 0.9;
   top: 0;
+  backdrop-filter: blur(4px);
 }
 
 #mobile-menu ul {
@@ -85,6 +86,13 @@ nav {
   font-size: 32px;
   font-weight: 600;
   color: var(--white);
+}
+
+#close i {
+  color: var(--white);
+  float: right;
+  padding: 1.5em;
+  font-size: 28px;
 }
 
 .about-section {
