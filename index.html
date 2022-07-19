@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">    
     <title>My Portfolio</title>
 </head>
@@ -14,16 +16,26 @@
                 <a href="#">My Logo</a>
             </div>
             <ul class="menu-items">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#works">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
-                <a href=""><img src="images/menu.png" alt="hamburger"></a>
+                <img id="hamburger" src="images/menu.png" alt="hamburger">
             </div>
         </nav>
+        <div id="mobile-menu" class="hidden">
+            <div>
+                <span id="close"><i class="bi bi-x"></i></span>
+            </div>
+            <ul>
+                <li><a href="#works">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+            </ul>
+        </div>
     </header>
-    <section class="about-section">
+    <section id="about" class="about-section">
         <div class="primary-text">
             <h1>I'm Norman<br> Glad to see you!</h1>
         </div>
@@ -41,7 +53,7 @@
             </ul>
         </div>
     </section>
-    <section class="center-margin works-section">
+    <section id="works" class="center-margin works-section">
         <div class="work-card">
             <div class="work-image">
                 <img src="images/work1.svg" alt="work 1">
@@ -119,7 +131,7 @@
             </div>
         </div>        
     </section>
-    <section class="contact-section">
+    <section id="contact" class="contact-section">
         <div class="contact-left">
             <div class="primary-text">
                 <h1 class="primary-text-change">About<br>Myself</h1>
@@ -154,7 +166,7 @@
             </ul>
         </div>
     </section>
-    <form class="contact-form" action="https://formspree.io/f/xoqrojoe" method="post">
+    <form id="contact-form" class="contact-form" action="https://formspree.io/f/xoqrojoe" method="post">
         <h2>Contact me</h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it </p>
         <ul class="contact-list">
@@ -164,5 +176,7 @@
             <li class="contact-list-item"><button type="submit">Get In Touch</button></li>
         </ul>
     </form>
+
+    <script src="./main.js"></script>
 </body>
 </html>

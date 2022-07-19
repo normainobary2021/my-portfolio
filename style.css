@@ -441,6 +441,43 @@ nav {
   border-color: var(--h1);
 }
 
+.hidden {
+  display: none;
+}
+
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  min-width: 100%;
+  background: var(--logo);
+  opacity: 0.9;
+  backdrop-filter: blur(4px);
+}
+
+#mobile-menu ul {
+  margin: 5em;
+  list-style-type: none;
+}
+
+#mobile-menu ul li {
+  padding-bottom: 40px;
+}
+
+#mobile-menu ul li a {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+#close i {
+  color: var(--white);
+  float: right;
+  padding: 1.5em;
+  font-size: 28px;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
