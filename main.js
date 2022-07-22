@@ -17,7 +17,7 @@ const worksArray = [
     subheadText2: 'Back End Dev',
     subheadText3: '2015',
     image1: 'images/work1.svg',
-    image2: 'images/work-1-lg.png',
+    image2: 'images/work-1-pop.png',
     paragraph: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci',
     language1: 'html',
     language2: 'css',
@@ -37,7 +37,7 @@ const worksArray = [
     subheadText2: 'Back End Dev',
     subheadText3: '2015',
     image1: 'images/work2.svg',
-    image2: 'images/work-2-lg.png',
+    image2: 'images/work-1-pop.png',
     paragraph: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci',
     language1: 'html',
     language2: 'css',
@@ -57,7 +57,7 @@ const worksArray = [
     subheadText2: 'Back End Dev',
     subheadText3: '2015',
     image1: 'images/work3.svg',
-    image2: 'images/work-3-lg.png',
+    image2: 'images/work-1-pop.png',
     paragraph: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci',
     language1: 'html',
     language2: 'css',
@@ -77,7 +77,7 @@ const worksArray = [
     subheadText2: 'Back End Dev',
     subheadText3: '2015',
     image1: 'images/work4.svg',
-    image2: 'images/work-4-lg.png',
+    image2: 'images/work-1-pop.png',
     paragraph: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci',
     language1: 'html',
     language2: 'css',
@@ -123,16 +123,18 @@ function popup() {
   const p2Span2 = document.createElement('span');
   const p2Span3 = document.createElement('span');
   const hr = document.createElement('hr');
+  const hr2 = document.createElement('hr');
   const wrapperBtnDiv = document.createElement('div');
-  const wrapperBtn1 = document.createElement('a');
+  const wrapperBtn1 = document.createElement('button');
   const wrapperIBtn1 = document.createElement('i');
   const wrapperIBtn2 = document.createElement('i');
-  const wrapperBtn2 = document.createElement('a');
+  const wrapperBtn2 = document.createElement('button');
   const fullModalDiv = document.createElement('div');
   const fullImgDiv = document.createElement('div');
   const fullDivImg = document.createElement('img');
   const fullMdlTxtDiv = document.createElement('div');
   const fullMdlP1 = document.createElement('p');
+  const rightGridDiv = document.createElement('div');
   const fullMdlP2 = document.createElement('p');
   const fullSpan1 = document.createElement('span');
   const fullSpan2 = document.createElement('span');
@@ -169,6 +171,11 @@ function popup() {
   fullSpan4.className = 'span7';
   fullSpan5.className = 'span8';
   fullSpan6.className = 'span9';
+  fullMdlP1.className = 'left-grid';
+  rightGridDiv.className = 'right-grid';
+  // fullMdlP2.className = 'right-grid';
+  // fullMdlP3.className = 'right-grid';
+  hr2.className = 'hr2';
   wrapperBtnDiv.className = 'wrapper-btns';
   wrapperBtn1.className = 'btnA';
   wrapperBtn2.className = 'btnB';
@@ -213,17 +220,29 @@ function popup() {
   fullImgDiv.appendChild(fullDivImg);
   fullModalDiv.appendChild(fullMdlTxtDiv);
   fullMdlTxtDiv.appendChild(fullMdlP1);
-  fullMdlTxtDiv.appendChild(fullMdlP2);
+  fullMdlTxtDiv.appendChild(rightGridDiv);
+  // fullMdlTxtDiv.appendChild(fullMdlP2);
+  rightGridDiv.appendChild(fullMdlP2);
+
   fullMdlP2.appendChild(fullSpan1);
   fullMdlP2.appendChild(fullSpan2);
   fullMdlP2.appendChild(fullSpan3);
-  fullMdlTxtDiv.appendChild(fullMdlP3);
+  // fullMdlTxtDiv.appendChild(fullMdlP3);
+  rightGridDiv.appendChild(fullMdlP3);
+  
   fullMdlP3.appendChild(fullSpan4);
   fullMdlP3.appendChild(fullSpan5);
   fullMdlP3.appendChild(fullSpan6);
-  fullMdlTxtDiv.appendChild(seeLiveBtn);
+
+  rightGridDiv.appendChild(hr2);
+
+  // fullMdlTxtDiv.appendChild(seeLiveBtn);
+  rightGridDiv.appendChild(seeLiveBtn);
+  
   seeLiveBtn.appendChild(seeLiveI);
-  fullMdlTxtDiv.appendChild(seeSourceBtn);
+  // fullMdlTxtDiv.appendChild(seeSourceBtn);
+  rightGridDiv.appendChild(seeSourceBtn);
+
   seeSourceBtn.appendChild(seeSourceI);
 
   const workSub = `${worksArray[j].subheadText1}\u00A0\u00A0${worksArray[j].subheadText2}\u00A0\u00A0${worksArray[j].subheadText3}`;
