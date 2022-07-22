@@ -173,8 +173,6 @@ function popup() {
   fullSpan6.className = 'span9';
   fullMdlP1.className = 'left-grid';
   rightGridDiv.className = 'right-grid';
-  // fullMdlP2.className = 'right-grid';
-  // fullMdlP3.className = 'right-grid';
   hr2.className = 'hr2';
   wrapperBtnDiv.className = 'wrapper-btns';
   wrapperBtn1.className = 'btnA';
@@ -221,28 +219,18 @@ function popup() {
   fullModalDiv.appendChild(fullMdlTxtDiv);
   fullMdlTxtDiv.appendChild(fullMdlP1);
   fullMdlTxtDiv.appendChild(rightGridDiv);
-  // fullMdlTxtDiv.appendChild(fullMdlP2);
   rightGridDiv.appendChild(fullMdlP2);
-
   fullMdlP2.appendChild(fullSpan1);
   fullMdlP2.appendChild(fullSpan2);
   fullMdlP2.appendChild(fullSpan3);
-  // fullMdlTxtDiv.appendChild(fullMdlP3);
   rightGridDiv.appendChild(fullMdlP3);
-  
   fullMdlP3.appendChild(fullSpan4);
   fullMdlP3.appendChild(fullSpan5);
   fullMdlP3.appendChild(fullSpan6);
-
   rightGridDiv.appendChild(hr2);
-
-  // fullMdlTxtDiv.appendChild(seeLiveBtn);
   rightGridDiv.appendChild(seeLiveBtn);
-  
   seeLiveBtn.appendChild(seeLiveI);
-  // fullMdlTxtDiv.appendChild(seeSourceBtn);
   rightGridDiv.appendChild(seeSourceBtn);
-
   seeSourceBtn.appendChild(seeSourceI);
 
   const workSub = `${worksArray[j].subheadText1}\u00A0\u00A0${worksArray[j].subheadText2}\u00A0\u00A0${worksArray[j].subheadText3}`;
