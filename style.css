@@ -228,21 +228,23 @@ nav {
   margin-left: 10%;
 }
 
-.resume-btn {
-  margin-bottom: 60px;
-}
-
 .project-btn,
 .resume-btn {
-  display: flex;
+  /* display: flex; */
   color: var(--logo);
-  margin-right: 50%;
+  /* margin-right: 50%; */
   border: 1px solid var(--logo);
   border-radius: 8px;
   padding: 10px;
-  padding-left: 30px;
-  font-size: 17px;
+  /* padding-left: 30px; */
+  font-size: 15px;
   font-weight: 500;
+  width: 150px;
+}
+
+.resume-btn {
+  margin-bottom: 60px;
+  width: 300px;
 }
 
 .project-btn {
@@ -251,13 +253,13 @@ nav {
 
 .project-btn:enabled,
 .resume-btn:enabled {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--logo);
   border: 1px solid var(--logo);
   background-color: transparent;
   border-radius: 8px;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .project-btn:hover,
@@ -751,8 +753,11 @@ nav {
   }
 
   .button-margin {
-    width: 50%;
-    padding-left: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: no-wrap;
+    /* width: 50%; */
+    /* padding-left: 5%; */
     transition: all 0.5s ease;
   }
 
