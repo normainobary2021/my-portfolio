@@ -445,39 +445,6 @@ nav {
   display: none;
 }
 
-#mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-height: 100vh;
-  min-width: 100%;
-  background: var(--logo);
-  opacity: 0.9;
-  backdrop-filter: blur(4px);
-}
-
-#mobile-menu ul {
-  margin: 5em;
-  list-style-type: none;
-}
-
-#mobile-menu ul li {
-  padding-bottom: 40px;
-}
-
-#mobile-menu ul li a {
-  font-size: 32px;
-  font-weight: 600;
-  color: var(--white);
-}
-
-#close i {
-  color: var(--white);
-  float: right;
-  padding: 1.5em;
-  font-size: 28px;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -616,6 +583,39 @@ nav {
 
 .mdl-fullscreen {
   display: none;
+}
+
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  min-width: 100%;
+  background: var(--logo);
+  opacity: 0.9;
+  backdrop-filter: blur(4px);
+}
+
+#mobile-menu ul {
+  margin: 5em;
+  list-style-type: none;
+}
+
+#mobile-menu ul li {
+  padding-bottom: 40px;
+}
+
+#mobile-menu ul li a {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+#close i {
+  color: var(--white);
+  float: right;
+  padding: 1.5em;
+  font-size: 28px;
 }
 
 @keyframes fade-in {
@@ -757,6 +757,67 @@ nav {
     transition: all 0.5s ease;
   }
 
+  .mdl-fullscreen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mdl-fullscreen .work-image-large {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-right: 4%;
+    width: 95%;
+    margin: 2% auto;
+  }
+
+  .mdl-fullscreen .work-image-large img:hover {
+    transform: none;
+  }
+
+  .mdl-fullscreen .mdl-text {
+    text-align: justify;
+    padding: 2em 2em 1em 0;
+  }
+
+  .mdl-fullscreen .mdl-text p {
+    color: var(--paragraph);
+    margin-bottom: 20px;
+  }
+
+  .mdl-fullscreen .mdl-text span {
+    margin-right: 10px;
+    padding: 5px;
+    background: var(--language);
+    border-radius: 4px;
+    color: var(--logo);
+  }
+
+  .mdl-fullscreen .mdl-text button {
+    padding: 1em;
+    background: transparent;
+    border: 1px solid var(--logo);
+    border-radius: 4px;
+    color: var(--logo);
+    font-size: 15px;
+    width: 40%;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .mdl-fullscreen .mdl-text .btnA {
+    background-image: url(./images/live.png);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+  }
+
+  .mdl-fullscreen .mdl-text .btnB {
+    background-image: url(./images/source.png);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+  }
+
   .contact-section {
     flex-direction: row;
     padding: 10%;
@@ -830,69 +891,8 @@ nav {
 
   .wrapper .wrapper-text,
   .wrapper .wrapper-btns,
-  .wrapper .wrapper-img
-  {
+  .wrapper .wrapper-img {
     display: none;
   }
 
-  .mdl-fullscreen {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .mdl-fullscreen .work-image-large {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    padding-right: 4%;
-    width: 95%;
-    margin: 2% auto;
-  }
-
-  .mdl-fullscreen .work-image-large img:hover {
-    transform: none;
-  }
-
-  .mdl-fullscreen .mdl-text {
-    text-align: justify;
-    padding: 2em 2em 1em 0;
-  }
-
-  .mdl-fullscreen .mdl-text p {
-    color: var(--paragraph);
-    margin-bottom: 20px;
-  }
-
-  .mdl-fullscreen .mdl-text span {
-    margin-right: 10px;
-    padding: 5px;
-    background: var(--language);
-    border-radius: 4px;
-    color: var(--logo);
-  }
-
-  .mdl-fullscreen .mdl-text button {
-    padding: 1em;
-    background: transparent;
-    border: 1px solid var(--logo);
-    border-radius: 4px;
-    color: var(--logo);
-    font-size: 15px;
-    width: 40%;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-
-  .mdl-fullscreen .mdl-text .btnA {
-    background-image: url(./images/live.png);
-    background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: center;
-  }
-
-  .mdl-fullscreen .mdl-text .btnB {
-    background-image: url(./images/source.png);
-    background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: center;
-  }
 }
