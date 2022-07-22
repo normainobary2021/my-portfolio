@@ -3,9 +3,6 @@ const close = document.getElementById('close');
 const menu = document.getElementById('mobile-menu');
 const item = document.querySelector('#mobile-menu ul');
 
-const popupMenu = document.getElementById('#popup');
-const modalClose = document.querySelector('.close-btn');
-
 const btn1 = document.getElementById('wkbtn1');
 const btn2 = document.getElementById('wkbtn2');
 const btn3 = document.getElementById('wkbtn3');
@@ -21,7 +18,7 @@ const worksArray = [
     subheadText3: '2015',
     image1: 'images/work1.svg',
     image2: 'images/work-1-lg.png',
-    paragraph: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci",
+    paragraph: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci',
     language1: 'html',
     language2: 'css',
     language3: 'javaScript',
@@ -41,7 +38,7 @@ const worksArray = [
     subheadText3: '2015',
     image1: 'images/work2.svg',
     image2: 'images/work-2-lg.png',
-    paragraph: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci",
+    paragraph: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci',
     language1: 'html',
     language2: 'css',
     language3: 'javaScript',
@@ -61,7 +58,7 @@ const worksArray = [
     subheadText3: '2015',
     image1: 'images/work3.svg',
     image2: 'images/work-3-lg.png',
-    paragraph: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci",
+    paragraph: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci',
     language1: 'html',
     language2: 'css',
     language3: 'javaScript',
@@ -81,7 +78,7 @@ const worksArray = [
     subheadText3: '2015',
     image1: 'images/work4.svg',
     image2: 'images/work-4-lg.png',
-    paragraph: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci",
+    paragraph: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci',
     language1: 'html',
     language2: 'css',
     language3: 'javaScript',
@@ -93,7 +90,7 @@ const worksArray = [
   },
 ];
 
-[menuIcon,close,item].forEach((e) => {
+[menuIcon, close, item].forEach((e) => {
   e.addEventListener('click', () => {
     menu.classList.toggle('hidden');
     menu.classList.toggle('hidden');
@@ -175,16 +172,15 @@ function popup() {
   wrapperBtnDiv.className = 'wrapper-btns';
   wrapperBtn1.className = 'btnA';
   wrapperBtn2.className = 'btnB';
-  wrapperIBtn1.classList.add('bi','bi-box-arrow-up-right');
-  wrapperIBtn2.classList.add('bi','bi-github');
+  wrapperIBtn1.classList.add('bi', 'bi-box-arrow-up-right');
+  wrapperIBtn2.classList.add('bi', 'bi-github');
   fullModalDiv.className = 'mdl-fullscreen';
   fullImgDiv.className = 'work-image-large';
   fullMdlTxtDiv.className = 'mdl-text';
   seeLiveBtn.className = 'btnA';
   seeSourceBtn.className = 'btnB';
-  seeLiveI.classList.add('bi','bi-box-arrow-up-right');
-  seeSourceI.classList.add('bi','bi-github');
-
+  seeLiveI.classList.add('bi', 'bi-box-arrow-up-right');
+  seeSourceI.classList.add('bi', 'bi-github');
 
   popupScreen.appendChild(popupDiv);
   popupDiv.appendChild(wrapperDiv);
@@ -251,44 +247,38 @@ function popup() {
   document.querySelector('.mdl-fullscreen .mdl-text p .span7').textContent = worksArray[j].language4;
   document.querySelector('.mdl-fullscreen .mdl-text p .span8').textContent = worksArray[j].language5;
   document.querySelector('.mdl-fullscreen .mdl-text p .span9').textContent = worksArray[j].language6;
-
   document.querySelector('.wrapper .wrapper-btns .btnA').textContent = 'See Live';
   document.querySelector('.wrapper .wrapper-btns .btnB').textContent = 'See Source';
   document.querySelector('.mdl-fullscreen .mdl-text .btnA').textContent = 'See Live';
   document.querySelector('.mdl-fullscreen .mdl-text .btnB').textContent = 'See Source';
 
-
   divSpan1.addEventListener('click', () => {
     popupDiv.remove();
   });
-
   seeLiveBtn.addEventListener('click', () => {
     window.open(worksArray[j].liveBtn);
   });
-
   seeSourceBtn.addEventListener('click', () => {
     window.open(worksArray[j].sourceBtn);
   });
-
-
 }
 
 btn1.addEventListener('click', () => {
-  j=0;
+  j = 0;
   popup();
 });
 
 btn2.addEventListener('click', () => {
-  j=1;
+  j = 1;
   popup();
 });
 
 btn3.addEventListener('click', () => {
-  j=2;
+  j = 2;
   popup();
 });
 
 btn4.addEventListener('click', () => {
-  j=3;
+  j = 3;
   popup();
 });
