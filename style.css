@@ -795,6 +795,14 @@ nav {
     align-items: flex-start;
   }
 
+  .mdl-fullscreen .mdl-text span {
+    margin-right: 10px;
+    padding: 5px;
+    background: var(--language);
+    border-radius: 4px;
+    color: var(--logo);
+  }
+
   .experience .inner-list li span {
     padding-top: 16px;
     margin-left: -1%;
@@ -834,14 +842,6 @@ nav {
   .mdl-fullscreen .mdl-text p {
     color: var(--paragraph);
     margin-bottom: 20px;
-  }
-
-  .mdl-fullscreen .mdl-text span {
-    margin-right: 10px;
-    padding: 5px;
-    background: var(--language);
-    border-radius: 4px;
-    color: var(--logo);
   }
 
   .mdl-fullscreen .mdl-text button {
