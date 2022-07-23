@@ -16,9 +16,10 @@ const worksArray = [
     subheadText1: 'CANOPY',
     subheadText2: 'Back End Dev',
     subheadText3: '2015',
-    image1: 'images/work1.svg',
+    image1: 'images/another1.svg',
     image2: 'images/work-1-pop.png',
-    paragraph: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci',
+    paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     language1: 'html',
     language2: 'css',
     language3: 'javaScript',
@@ -38,7 +39,8 @@ const worksArray = [
     subheadText3: '2015',
     image1: 'images/work2.svg',
     image2: 'images/work-1-pop.png',
-    paragraph: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci',
+    paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     language1: 'html',
     language2: 'css',
     language3: 'javaScript',
@@ -58,7 +60,8 @@ const worksArray = [
     subheadText3: '2015',
     image1: 'images/work3.svg',
     image2: 'images/work-1-pop.png',
-    paragraph: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci',
+    paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     language1: 'html',
     language2: 'css',
     language3: 'javaScript',
@@ -78,7 +81,8 @@ const worksArray = [
     subheadText3: '2015',
     image1: 'images/work4.svg',
     image2: 'images/work-1-pop.png',
-    paragraph: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda aliquam repellat iusto, qui eligendi excepturi saepe deleniti. Et natus laborum quod adipisci',
+    paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     language1: 'html',
     language2: 'css',
     language3: 'javaScript',
@@ -109,6 +113,7 @@ function popup() {
   const divSpan1 = document.createElement('span');
   const wrapperSubHeadDiv = document.createElement('div');
   const workSubText = document.createElement('p');
+  const canopySpan = document.createElement('span');
   const dotSpan1 = document.createElement('span');
   const descrSpan1 = document.createElement('span');
   const dotSpan2 = document.createElement('span');
@@ -157,11 +162,12 @@ function popup() {
   dotSpan1.className = 'dot';
   descrSpan1.className = 'description';
   dotSpan2.className = 'dot';
-  descrSpan2.className = 'description';
+  descrSpan2.className = 'description2';
   wrapperImageDiv.className = 'wrapper-img';
   workImageDiv.className = 'work-image';
   wrapperTextDiv.className = 'wrapper-text';
   wrapperTextP1.className = 'long-paragraph';
+  canopySpan.className = 'canopy';
   p2Span1.className = 'span1';
   p2Span2.className = 'span2';
   p2Span3.className = 'span3';
@@ -194,6 +200,7 @@ function popup() {
   wrapperHeadDiv.appendChild(divSpan1);
   wrapperDiv.appendChild(wrapperSubHeadDiv);
   wrapperSubHeadDiv.appendChild(workSubText);
+  workSubText.appendChild(canopySpan);
   workSubText.appendChild(dotSpan1);
   workSubText.appendChild(descrSpan1);
   workSubText.appendChild(dotSpan2);
@@ -233,11 +240,11 @@ function popup() {
   rightGridDiv.appendChild(seeSourceBtn);
   seeSourceBtn.appendChild(seeSourceI);
 
-  const workSub = `${worksArray[j].subheadText1}\u00A0\u00A0${worksArray[j].subheadText2}\u00A0\u00A0${worksArray[j].subheadText3}`;
-
   document.querySelector('.wrapper-head h2').textContent = worksArray[j].title;
   document.querySelector('.close-btn').textContent = worksArray[j].close;
-  document.querySelector('.wrapper-sub-head .work-subtext').textContent = workSub;
+  document.querySelector('.wrapper-sub-head .work-subtext .canopy').textContent = worksArray[j].subheadText1;
+  document.querySelector('.wrapper-sub-head .work-subtext .description').textContent = worksArray[j].subheadText2;
+  document.querySelector('.wrapper-sub-head .work-subtext .description2').textContent = worksArray[j].subheadText3;
 
   document.querySelector('.wrapper-img .work-image img').src = worksArray[j].image1;
   document.querySelector('.mdl-fullscreen .work-image-large img').src = worksArray[j].image2;
@@ -247,7 +254,7 @@ function popup() {
   document.querySelector('.wrapper-text p .span2').textContent = worksArray[j].language2;
   document.querySelector('.wrapper-text p .span3').textContent = worksArray[j].language3;
 
-  document.querySelector('.mdl-fullscreen .mdl-text p').textContent = worksArray[j].paragraph;
+  document.querySelector('.mdl-fullscreen .mdl-text p').textContent = worksArray[j].paragraph2;
   document.querySelector('.mdl-fullscreen .mdl-text p .span4').textContent = worksArray[j].language1;
   document.querySelector('.mdl-fullscreen .mdl-text p .span5').textContent = worksArray[j].language2;
   document.querySelector('.mdl-fullscreen .mdl-text p .span6').textContent = worksArray[j].language3;
