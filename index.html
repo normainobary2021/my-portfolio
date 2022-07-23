@@ -166,14 +166,15 @@
             </ul>
         </div>
     </section>
-    <form id="contact-form" class="contact-form" action="https://formspree.io/f/xoqrojoe" method="post">
+    <form novalidate id="contact-form" class="contact-form" action="https://formspree.io/f/xoqrojoe" method="post">
         <h2>Contact me</h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it </p>
         <ul class="contact-list">
-            <li class="contact-list-item"><input type="text" name="name" placeholder="Enter your name" required maxlength="30"></li>
-            <li class="contact-list-item"><input type="email" name="email" placeholder="Enter your email" required></li>
-            <li class="contact-list-item"><textarea maxlength="500" name="message" placeholder="Write your message here" required></textarea></li>
-            <li class="contact-list-item"><button type="submit">Get In Touch</button></li>
+            <li class="contact-list-item"><input id="name" type="text" name="name" placeholder="Enter your name" required maxlength="30"></li>
+            <li class="contact-list-item"><input id="email" type="email" name="email" placeholder="Enter your email" required></li>
+            <li class="contact-list-item"><textarea id="message" maxlength="500" name="message" placeholder="Write your message here" required></textarea></li>
+            <span class="error-msg" id="error"></span>
+            <li class="contact-list-item"><button id="submit-button" type="submit">Get In Touch</button></li>
         </ul>
     </form>
 
