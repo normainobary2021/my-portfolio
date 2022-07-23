@@ -3,6 +3,10 @@ const close = document.getElementById('close');
 const menu = document.getElementById('mobile-menu');
 const item = document.querySelector('#mobile-menu ul');
 
+const validEmail = document.getElementById('email');
+const errorMessage = document.getElementById('error');
+const contactForm = document.getElementById('contact-form');
+
 const btn1 = document.getElementById('wkbtn1');
 const btn2 = document.getElementById('wkbtn2');
 const btn3 = document.getElementById('wkbtn3');
@@ -295,4 +299,20 @@ btn3.addEventListener('click', () => {
 btn4.addEventListener('click', () => {
   j = 3;
   popup();
+});
+
+function ErrorMsg() {
+  const regularExpression = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+
+  if (!validEmail.value.match(regularExpression)) {
+    errorMessage.innerHTML = 'Please use lowercase id and valid email address';
+    validEmail.style.borderColor = 'red';
+  } else {
+    contactForm.submit();
+  }
+}
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  ErrorMsg();
 });
