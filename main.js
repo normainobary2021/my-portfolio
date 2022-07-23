@@ -2,11 +2,12 @@ const menuIcon = document.getElementById('hamburger');
 const close = document.getElementById('close');
 const menu = document.getElementById('mobile-menu');
 const item = document.querySelector('#mobile-menu ul');
-
+const formName = document.getElementById('name');
 const validEmail = document.getElementById('email');
+const formMessage = document.getElementById('message');
 const errorMessage = document.getElementById('error');
+const formButton = document.getElementById('submit-button');
 const contactForm = document.getElementById('contact-form');
-
 const btn1 = document.getElementById('wkbtn1');
 const btn2 = document.getElementById('wkbtn2');
 const btn3 = document.getElementById('wkbtn3');
@@ -315,4 +316,29 @@ function ErrorMsg() {
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   ErrorMsg();
+});
+
+let formContact = JSON.parse(localStorage.getItem('formContact'));
+
+if (formContact) {
+  formName.value = formContact.name;
+  validEmail.value = formContact.email;
+  formMessage.value = formContact.feedback;
+} else {
+  formContact = { name: '', email: '', feedback: '' };
+}
+
+validEmail.addEventListener('input', () => {
+  formButton.setCustomValidity('');
+  formContact.email = validEmail.value;
+  localStorage.setItem('formContact', JSON.stringify(formContact));
+});
+formName.addEventListener('input', () => {
+  formContact.name = formName.value;
+  localStorage.setItem('formContact', JSON.stringify(formContact));
+});
+
+formMessage.addEventListener('input', () => {
+  formContact.feedback = formMessage.value;
+  localStorage.setItem('formContact', JSON.stringify(formContact));
 });
