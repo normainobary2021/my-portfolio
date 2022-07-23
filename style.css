@@ -620,6 +620,10 @@ nav {
   font-size: 28px;
 }
 
+#error {
+  color: brown;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
