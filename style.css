@@ -622,6 +622,7 @@ nav {
 
 #error {
   color: brown;
+  font-size: 12px;
 }
 
 @keyframes fade-in {
@@ -942,7 +943,6 @@ nav {
   }
 
   #error {
-    font-size: 10px;
-    border: 1px solid red;
+    font-size: 16px;
   }
 }
