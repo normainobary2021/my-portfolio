@@ -468,7 +468,7 @@ nav {
   height: 90%;
   background: var(--white);
   border-radius: 8px;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.30);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
   display: grid;
   grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
   box-sizing: border-box;
