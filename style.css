@@ -940,4 +940,9 @@ nav {
   .wrapper .wrapper-img {
     display: none;
   }
+
+  #error{
+    font-size: 10px;
+    border: 1px solid red;
+  }
 }
