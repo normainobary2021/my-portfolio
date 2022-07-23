@@ -620,6 +620,10 @@ nav {
   font-size: 28px;
 }
 
+#error {
+  color: brown;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -935,5 +939,10 @@ nav {
   .wrapper .wrapper-btns,
   .wrapper .wrapper-img {
     display: none;
+  }
+
+  #error {
+    font-size: 10px;
+    border: 1px solid red;
   }
 }
