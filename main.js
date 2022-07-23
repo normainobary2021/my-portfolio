@@ -333,3 +333,12 @@ validEmail.addEventListener('input', () => {
   formContact.email = validEmail.value;
   localStorage.setItem('formContact', JSON.stringify(formContact));
 });
+formName.addEventListener('input', () => {
+  formContact.name = formName.value;
+  localStorage.setItem('formContact', JSON.stringify(formContact));
+});
+
+formMessage.addEventListener('input', () => {
+  formContact.feedback = formMessage.value;
+  localStorage.setItem('formContact', JSON.stringify(formContact));
+});
